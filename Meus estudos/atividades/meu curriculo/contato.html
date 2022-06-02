@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="get">
+
+        <label for="idEmail">Email</label><br>
+        <input type="text" id="idEmail" name="nmEmail" placeholder="Email" required onclick="pegarnome">
+        <br>
+
+        <label for="idIdade">Idade</label><br>
+        <input type="number" id="idIdade" name="nmIdade" min="1" max="99" onclick="pegarnome"><br>
+         
+        <label for="idNome">Nome</label><br>
+        <input type="text" id="idNome" name="nmNome" onclick="pegarnome">
+        <br>
+
+        <input type="radio" id="idFem"  name="nmSexo">
+        <label for="idFem">Feminino</label>
+
+        
+        <input type="radio" id="idFMan"  name="nmSexo">
+        <label for="idMan">Masculino</label>
+         <p>selecione os assuntos de seu interesse</p><br>
+
+            <label for="idTexto"> Texto </label><br>
+            <textarea name="nmTexto" id="idTexto" cols="30" rows="10"></textarea><br>
+
+            <button type="reset">Limpar tela</button><br>
+
+            <form action="">
+                <fieldset>
+                    <label for="idCarros">Escolha seu carro</label><br>
+                    <legend>Formulario 2</legend>
+                    <select name="nmCarros" id="idCarros" size="2" multiple> 
+                        <option value="Volvo"></option>
+                        <option value="Fiat"></option>
+                        <option value="Ford"></option>
+                        <option value="Nissan"></option>
+                    </select>
+
+
+                </fieldset>
+
+              <script>
+                
+                var Nome
+                var Email
+                var Idade
+                
+                function pegarnome() {
+                    nome = document.getElementById(Nome).value
+                    console.log("Nome" + nome + "Email" + nome + "Idade" +noma)
+                }
+
+
+              </script>
+    </form>
+
+    
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <output id="Out">contar</output>
+        
+        <script>
+
+            var contador = 5
+            var textoContador = ""
+            var out = document.getElementById("Out")
+
+            console.log("inicio")
+            while (contador < 5) {
+                
+                textoContador = textoContador + contador + " "
+                out.value = out.value + contador
+                console.log("while");
+                contador++
+                
+            }
+            console.log("fim...")
+           out.value = "Inicio " + textoContador + " Fim..."
+          
+        </script>
+
+
+
+    </body>
+</html>
